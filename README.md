@@ -1,104 +1,77 @@
-Berikut adalah versi yang sudah disederhanakan, dirapikan, dan diformat sesuai standar file `README.md` untuk proyek praktikum siswa SMK:
-
-```md
-# 🛒 Toko Online Sederhana - Praktikum SMK
-
-Website toko online sederhana menggunakan **PHP + MySQLi** tanpa framework. Cocok untuk tugas praktikum siswa SMK.
-
----
-
-## 📦 Persiapan
-
-### 1. Software Wajib
-- XAMPP atau Laragon
-- Code Editor (VS Code / Notepad++ / Sublime Text)
-- Browser (Chrome/Firefox)
-
-### 2. Instalasi
-1. Ekstrak folder `Toko-Online` ke:
-   - `C:\xampp\htdocs\Toko-Online` (untuk XAMPP)
-   - `C:\laragon\www\Toko-Online` (untuk Laragon)
-2. Jalankan Apache dan MySQL
-3. Buka `http://localhost/phpmyadmin`
-4. Buat database `toko_online` dan **import** file `toko_online.sql`
+Berikut kelanjutan dan perapian dari penulisan `README.md` sesuai permintaanmu, tanpa kotak kode yang tidak perlu, dan disusun dengan rapi serta mudah dibaca:
 
 ---
 
 ## ⚙️ Konfigurasi
 
 ### Ganti Nama Toko
-Edit file:
-```
 
-/includes/header.php
+Buka file `includes/header.php`, lalu ubah bagian berikut:
 
-````
-Ganti teks:
 ```html
 <a class="navbar-brand" href="index.php">NAMA TOKO KAMU</a>
-````
+```
+
+Ganti teks "NAMA TOKO KAMU" sesuai nama kelompok atau nama toko kalian.
 
 ### Login Admin
 
-Buka:
+Buka halaman admin melalui:
 
-```
-http://localhost/Toko-Online/admin/login.php
-```
+`http://localhost/Toko-Online/admin/login.php`
 
-Login:
+Gunakan akun berikut untuk login:
 
 * **Username:** admin
 * **Password:** admin123
 
 ---
 
-## 📋 Fitur
+## 🧑‍💻 Cara Penggunaan
 
-### Untuk Admin
+### Sebagai Admin
 
-* Tambah, edit, dan hapus produk
-* Upload gambar produk
+* Tambahkan produk baru melalui halaman admin.
+* Edit atau hapus produk yang sudah ada.
+* Upload gambar produk dengan format JPG/PNG.
 
-### Untuk Pengunjung
+### Sebagai Pengunjung
 
-* Lihat daftar produk
-* Buka detail produk
+* Akses halaman utama di `http://localhost/Toko-Online`.
+* Lihat daftar produk.
+* Klik produk untuk melihat detailnya.
 
 ---
 
-## 📂 Struktur Folder
+## 📁 Struktur Folder
 
-```
-Toko-Online/
-├── admin/            # Halaman admin
-├── assets/images/    # Gambar produk
-├── config/           # Koneksi database
-├── includes/         # Header & footer
-```
+* `admin/` – Halaman dashboard admin
+* `assets/images/` – Folder untuk menyimpan gambar produk
+* `config/` – File koneksi ke database
+* `includes/` – Header dan footer website
 
 ---
 
 ## 🧪 Tugas Praktikum
 
-* Ganti nama toko sesuai kelompok
-* Tambahkan minimal 5 produk
-* Upload gambar untuk setiap produk
-* Tampilkan hasil di browser
+1. Ganti nama toko sesuai nama kelompok
+2. Tambahkan minimal 5 produk
+3. Upload gambar untuk setiap produk
+4. Tampilkan hasil di browser saat presentasi
 
 ---
 
 ## ❗ Troubleshooting
 
-### Gambar Tidak Muncul
+**1. Gambar tidak muncul**
 
-* Pastikan file ada di `assets/images`
-* Periksa nama file di database (tabel `produk`)
+* Pastikan gambar disimpan di folder `assets/images/`
+* Periksa nama file gambar di database (phpMyAdmin → tabel `produk`)
 
-### Login Gagal
+**2. Login admin gagal**
 
-* Cek username/password
-* Reset password lewat phpMyAdmin:
+* Periksa apakah username dan password benar (admin / admin123)
+* Jika lupa password, reset di phpMyAdmin dengan perintah SQL berikut:
 
 ```sql
 UPDATE admin 
@@ -108,14 +81,12 @@ WHERE username = 'admin';
 
 ---
 
-**Selamat Mengerjakan dan Semangat Belajar! 🎉**
+## ✅ Tips
 
-```
+* Jangan ubah file PHP selain yang diperintahkan
+* Pastikan database sudah di-import sebelum digunakan
+* Jalankan XAMPP atau Laragon saat mengakses website
 
-File ini sudah:
-- Menggunakan format markdown yang rapi dan bersih
-- Disederhanakan agar langsung ke inti
-- Cocok untuk file `README.md` di root folder projek
+---
 
-Jika kamu ingin saya bantu menambahkan screenshot, diagram alur, atau panduan tambahan, tinggal beri tahu.
-```
+**Selamat mengerjakan dan semangat belajar! 💻🎉**
