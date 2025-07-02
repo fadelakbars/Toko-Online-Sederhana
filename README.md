@@ -1,4 +1,16 @@
 
+## 🧪 Tugas
+
+Siswa diminta untuk:
+
+1. Mengganti nama toko sesuai nama kelompok
+2. Menambahkan minimal **5 produk**
+3. Upload gambar untuk setiap produk
+4. Menjalankan dan menampilkan hasil di browser
+5. Mempresentasikan hasil kerja kelompok di depan kelas
+
+---
+
 ## 🛠️ Langkah-Langkah
 
 ### **Langkah 1: Instalasi Alat**
@@ -93,18 +105,6 @@ Toko-Online/
 ├── config/            # Koneksi ke database
 ├── includes/          # Header dan footer
 ```
-
----
-
-## 🧪 Tugas
-
-Siswa diminta untuk:
-
-1. Mengganti nama toko sesuai nama kelompok
-2. Menambahkan minimal **5 produk**
-3. Upload gambar untuk setiap produk
-4. Menjalankan dan menampilkan hasil di browser
-5. Mempresentasikan hasil kerja kelompok di depan kelas
 
 ---
 
