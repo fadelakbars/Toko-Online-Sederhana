@@ -1,92 +1,117 @@
-Berikut kelanjutan dan perapian dari penulisan `README.md` sesuai permintaanmu, tanpa kotak kode yang tidak perlu, dan disusun dengan rapi serta mudah dibaca:
+
+## 🛠️ Langkah-Langkah
+
+### **Langkah 1: Instalasi Alat**
+
+Pastikan software berikut sudah terpasang di komputer:
+
+* ✅ XAMPP atau Laragon
+* ✅ Text Editor (VS Code / Notepad++)
+* ✅ Browser (Chrome / Firefox)
 
 ---
 
-## ⚙️ Konfigurasi
+### **Langkah 2: Setup Project Website**
 
-### Ganti Nama Toko
+1. **Ekstrak folder `Toko-Online`** ke:
 
-Buka file `includes/header.php`, lalu ubah bagian berikut:
+   * `C:\xampp\htdocs\Toko-Online` (jika pakai XAMPP)
+   * `C:\laragon\www\Toko-Online` (jika pakai Laragon)
+
+2. **Jalankan XAMPP atau Laragon**
+   Aktifkan layanan **Apache** dan **MySQL**
+
+3. **Buat Database**
+
+   * Buka browser → ketik `http://localhost/phpmyadmin`
+   * Klik “Database” → buat database baru bernama: `toko_online`
+   * Klik database tersebut, lalu pilih “Import”
+   * Upload file `toko_online.sql` dari folder projek
+
+---
+
+### **Langkah 3: Konfigurasi Awal**
+
+#### 3.1 Ganti Nama Toko
+
+Buka file:
+
+```
+includes/header.php
+```
+
+Ubah bagian berikut:
 
 ```html
 <a class="navbar-brand" href="index.php">NAMA TOKO KAMU</a>
 ```
 
-Ganti teks "NAMA TOKO KAMU" sesuai nama kelompok atau nama toko kalian.
+Ganti teks sesuai nama kelompok kalian.
 
-### Login Admin
+#### 3.2 Login ke Admin Panel
 
-Buka halaman admin melalui:
+Akses:
 
-`http://localhost/Toko-Online/admin/login.php`
+```
+http://localhost/Toko-Online/admin/login.php
+```
 
-Gunakan akun berikut untuk login:
+Gunakan:
 
-* **Username:** admin
-* **Password:** admin123
-
----
-
-## 🧑‍💻 Cara Penggunaan
-
-### Sebagai Admin
-
-* Tambahkan produk baru melalui halaman admin.
-* Edit atau hapus produk yang sudah ada.
-* Upload gambar produk dengan format JPG/PNG.
-
-### Sebagai Pengunjung
-
-* Akses halaman utama di `http://localhost/Toko-Online`.
-* Lihat daftar produk.
-* Klik produk untuk melihat detailnya.
+* Username: `admin`
+* Password: `admin123`
 
 ---
 
-## 📁 Struktur Folder
+### **Langkah 4: Menambahkan Produk**
 
-* `admin/` – Halaman dashboard admin
-* `assets/images/` – Folder untuk menyimpan gambar produk
-* `config/` – File koneksi ke database
-* `includes/` – Header dan footer website
-
----
-
-## 🧪 Tugas Praktikum
-
-1. Ganti nama toko sesuai nama kelompok
-2. Tambahkan minimal 5 produk
-3. Upload gambar untuk setiap produk
-4. Tampilkan hasil di browser saat presentasi
+1. Setelah login ke admin, klik **"Tambah Produk"**
+2. Isi form: nama, harga, deskripsi, dan upload gambar
+3. Klik **Simpan**
+4. Produk akan muncul di halaman utama website
 
 ---
 
-## ❗ Troubleshooting
+### **Langkah 5: Uji Website**
 
-**1. Gambar tidak muncul**
+1. Buka halaman utama:
 
-* Pastikan gambar disimpan di folder `assets/images/`
-* Periksa nama file gambar di database (phpMyAdmin → tabel `produk`)
+   ```
+   http://localhost/Toko-Online
+   ```
+2. Coba lihat produk yang telah ditambahkan
+3. Klik salah satu produk untuk melihat detailnya
 
-**2. Login admin gagal**
+---
 
-* Periksa apakah username dan password benar (admin / admin123)
-* Jika lupa password, reset di phpMyAdmin dengan perintah SQL berikut:
+## 📂 Struktur Folder Penting
 
-```sql
-UPDATE admin 
-SET password = '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi' 
-WHERE username = 'admin';
+```
+Toko-Online/
+├── admin/             # Panel admin
+├── assets/images/     # Folder gambar produk
+├── config/            # Koneksi ke database
+├── includes/          # Header dan footer
 ```
 
 ---
 
-## ✅ Tips
+## 🧪 Tugas
 
-* Jangan ubah file PHP selain yang diperintahkan
-* Pastikan database sudah di-import sebelum digunakan
-* Jalankan XAMPP atau Laragon saat mengakses website
+Siswa diminta untuk:
+
+1. Mengganti nama toko sesuai nama kelompok
+2. Menambahkan minimal **5 produk**
+3. Upload gambar untuk setiap produk
+4. Menjalankan dan menampilkan hasil di browser
+5. Mempresentasikan hasil kerja kelompok di depan kelas
 
 ---
 
-**Selamat mengerjakan dan semangat belajar! 💻🎉**
+## 📝 Catatan Tambahan
+
+* **Jangan** mengubah file PHP selain yang diarahkan di modul ini
+* Pastikan **XAMPP/Laragon aktif** sebelum menjalankan website
+* Simpan semua gambar produk ke dalam folder `assets/images/`
+
+---
