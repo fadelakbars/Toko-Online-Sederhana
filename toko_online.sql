@@ -25,4 +25,4 @@ CREATE TABLE admin (
 
 -- Insert default admin (username: admin, password: admin123)
 INSERT INTO admin (username, password, nama_lengkap) 
-VALUES ('admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'Administrator');
+VALUES ('admin', 'admin123', 'Administrator');
